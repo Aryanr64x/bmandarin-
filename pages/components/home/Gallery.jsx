@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 import imageUrlBuilder from '@sanity/image-url'
 import client from '../../../sanity/client';
 
-const Gallery = ({ gallery }) => {
+const  Gallery = ({ gallery }) => {
     const settings = {
         autoplay: true,
         infinite: true,
@@ -29,7 +29,7 @@ const Gallery = ({ gallery }) => {
                     {
                         gallery.map((image) => {
                             return (
-                                <Tilt>
+                                <Tilt key = { image.image.asset._ref }>
                                     <div className="align-middle px-8">
                                         <img className="w-full h-[200px] md:h-[400px] lg:h-[500px] rounded-lg shadow-lg shadow-black" src={urlFor(image.image)} alt="amb3" border="0" />
                                     </div>
