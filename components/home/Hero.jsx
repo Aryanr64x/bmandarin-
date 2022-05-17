@@ -1,6 +1,6 @@
 import Zoom from 'react-reveal/Zoom';
 import imageUrlBuilder from '@sanity/image-url'
-import client from '../../../sanity/client';
+import client from '../../sanity/client'
 
 const Hero = ({ hero }) => {
     const builder = imageUrlBuilder(client)

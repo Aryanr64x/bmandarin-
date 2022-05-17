@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Tilt from 'react-parallax-tilt';
 import imageUrlBuilder from '@sanity/image-url'
-import client from '../../../sanity/client';
+import client from '../../sanity/client'
 
 const  Gallery = ({ gallery }) => {
     const settings = {

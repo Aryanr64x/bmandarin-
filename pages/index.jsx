@@ -1,9 +1,13 @@
-import Hero from "./components/home/Hero"
-import Gallery from "./components/home/Gallery"
-import ShowMenu from "./components/home/ShowMenu"
-import Ratings from "./components/home/Ratings"
-import Contact from "./components/home/Contact"
-import Footer  from "./components/home/Footer"
+import Hero from "../components/home/Hero"
+import Gallery from "../components/home/Gallery"
+import ShowMenu from "../components/home/ShowMenu"
+
+import Ratings from "../components/home/Ratings"
+
+import Contact from "../components/home/Contact"
+
+import Footer from "../components/home/Footer"
+
 import client from '../sanity/client'
 
 export default function Home(props) {
@@ -23,6 +27,7 @@ export default function Home(props) {
 
 
 export async function getStaticProps(context) {
+
   const hero = await client.fetch("*[_type == 'hero'][0]");
   const gallery  = await client.fetch("*[_type == 'gallery']")
   const exploreMenu = await client.fetch("*[_type == 'exploremenu'][0]")
@@ -30,7 +35,7 @@ export async function getStaticProps(context) {
   const reach = await client.fetch("*[_type == 'reach'][0]")
   const rating = await client.fetch("*[_type == 'rating'][0]")
   
-
+  console.log(rating);
 
 
   return {
@@ -38,4 +43,5 @@ export async function getStaticProps(context) {
       hero,gallery, exploreMenu, contact, reach, rating
     }, // will be passed to the page component as props
   }
+
 }
