@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @font-face {
-    font-family: gang;
-    src: url('fonts/title.ttf');
+    font-family: 'gang_of_threeregular';
+    src: url('fonts/title-webfont.woff2') format('woff2'),
+         url('fonts/title-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .title{
-    font-family: 'gang';
+    font-family: 'gang_of_threeregular';
     line-height: 72px !important;
 }
 
