@@ -1,6 +1,7 @@
 import Zoom from 'react-reveal/Zoom';
 import imageUrlBuilder from '@sanity/image-url'
 import client from '../../sanity/client'
+import Link from 'next/link'
 
 const Hero = ({ hero }) => {
     const builder = imageUrlBuilder(client)
@@ -11,7 +12,7 @@ const Hero = ({ hero }) => {
     return (
         <div>
             <div className="flex mx-4 md:mx-24 xl:mx-36 justify-end items-center h-12">
-                <strong className="cursor-pointer hidden lg:block">Menu</strong>
+           <strong className="cursor-pointer hidden lg:block">       <Link href="/menu"> Menu </Link>   </strong>
             </div>
             <div className="min-h-screen mx-4 md:mx-24 xl:mx-36 flex flex-col lg:flex-row items-center ">
                 <div className="basis-1/2">
@@ -29,9 +30,9 @@ const Hero = ({ hero }) => {
                             {hero.byline}
                         </div>
                         <div className="mt-8 flex justify-center lg:justify-start">
-                            <button className="px-4 py-2 bg-tertiary mr-4 rounded font-bold">
+                            <a href="https://www.zomato.com/bangalore/bangalore-mandarin-1-indiranagar" className="px-4 py-2 bg-tertiary mr-4 rounded font-bold">
                                 ORDER ONLINE
-                            </button>
+                            </a>
                             <button className="px-4 py-2 border-2 border-tertiary  font-bold hover:bg-tertiary rounded  transition-all duration-500">
                                 BOOK A TABLE
                             </button>
