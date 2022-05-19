@@ -31,7 +31,7 @@ const Contact = ({ contact, reach }) => {
             </div>
             <div className="mt-24 flex items-center flex-col lg:flex-row">
                 <div className="basis-1/2 flex flex-col items-center lg:items-start">
-                    <div className="text-4xl title text-center lg:text-left">
+                    <div className="text-4xl font-bold text-center lg:text-left">
                         Find us at
                     </div>
                     <div className="text-2xl text-center lg:text-left">
