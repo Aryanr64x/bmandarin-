@@ -1,6 +1,6 @@
 const Contact = ({ contact, reach }) => {
     return (
-        <div className="mt-24 mx-4 md:mx-24 xl:mx-36">
+        <div className="mt-24 mx-4 md:mx-24 xl:mx-36" id="contact">
             <div className="text-center">
                 <div className="text-5xl title flex justify-center">
                     <svg className="h-9 md:h-12" viewBox="0 0 457 63" fill="none" xmlns="http://www.w3.org/2000/svg">

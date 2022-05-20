@@ -33,9 +33,9 @@ const Hero = ({ hero }) => {
                             <a href="https://www.zomato.com/bangalore/bangalore-mandarin-1-indiranagar" className="px-4 py-2 bg-tertiary mr-4 rounded font-bold">
                                 ORDER ONLINE
                             </a>
-                            <button className="px-4 py-2 border-2 border-tertiary  font-bold hover:bg-tertiary rounded  transition-all duration-500">
+                            <a href="#contact" className="px-4 py-2 border-2 border-tertiary  font-bold hover:bg-tertiary rounded  transition-all duration-500">
                                 BOOK A TABLE
-                            </button>
+                            </a>
                         </div>
                     </Zoom>
                 </div>
