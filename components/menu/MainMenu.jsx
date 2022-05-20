@@ -6,13 +6,13 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const MainMenu = () => {
     return (
         <div className="menu px-4 md:px-24 lg:px-36 mt-8">
-            <Accordion className="bg-primary text-secondary">
+            <Accordion className=""   style={{backgroundColor: '#F93943', color: '#FCECC9'}}>
                 <AccordionSummary
-
+                  
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <div className="flex justify-between w-full">
+                    <div className="flex justify-between w-full ">
                         <div className="text-3xl"> Banglore Mandarin Special  </div>
                         <div className="text-xl">  <ExpandMoreIcon /> </div>
                     </div>
@@ -36,7 +36,7 @@ const MainMenu = () => {
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <Accordion className="bg-primary text-secondary" expandIcon={<ExpandMoreIcon />}>
+            <Accordion style={{backgroundColor: '#F93943', color: '#FCECC9'}} expandIcon={<ExpandMoreIcon />}>
                 <AccordionSummary
 
                     aria-controls="panel2a-content"
@@ -58,7 +58,7 @@ const MainMenu = () => {
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <Accordion className="bg-primary text-secondary" expandIcon={<ExpandMoreIcon />}>
+            <Accordion style={{backgroundColor: '#F93943', color: '#FCECC9'}} expandIcon={<ExpandMoreIcon />}>
                 <AccordionSummary
 
                     aria-controls="panel2a-content"
@@ -71,12 +71,13 @@ const MainMenu = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                       
+                       Content Not Yet Added 
+                       
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion className="bg-primary text-secondary" expandIcon={<ExpandMoreIcon />}>
+            <Accordion style={{backgroundColor: '#F93943', color: '#FCECC9'}} expandIcon={<ExpandMoreIcon />}>
                 <AccordionSummary
 
                     aria-controls="panel2a-content"
@@ -89,8 +90,7 @@ const MainMenu = () => {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        Content Not Yet Added 
                     </Typography>
                 </AccordionDetails>
             </Accordion>
